@@ -82,3 +82,15 @@ If everything goes ok you'll get a list of furniture products :)
 
 Expalanation of the building steps and logic is given in <b> explanation.md </b> file
 
+## Models
+
+Trained model files (.keras) are not included in this repository due to GitHub file size limits. 
+To reproduce them, run the training scripts.
+
+The following models were trained:
+- bert_L-2_H-256_A-4
+- bert_L-2_H-768_A-12
+- bert_L-4_H-128_A-2
+- bert_L-8_H-128_A-2
+- bert_embedder
+
