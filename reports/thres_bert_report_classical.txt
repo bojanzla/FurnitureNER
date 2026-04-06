@@ -1,0 +1,191 @@
+
+ TRAINING bert 
+
+(1399, 512) (499, 512)
+
+Label distribution train:
+Label 1:489
+Label 0:910
+
+Label distribution test:
+Label 1:102
+Label 0:397
+Performing model optimizations...
+
+Estimator: Logistic Regression
+Best params: {'clf__penalty': 'l2'}
+Best training accuracy: 0.859
+Test set f1 score for best params: 0.685 
+
+
+=== Confusion Matrix ===
+[[353  44]
+ [ 26  76]]
+
+
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.93      0.89      0.91       397
+           1       0.63      0.75      0.68       102
+
+    accuracy                           0.86       499
+   macro avg       0.78      0.82      0.80       499
+weighted avg       0.87      0.86      0.86       499
+
+
+Estimator: Random Forest
+Best params: {'clf__criterion': 'entropy', 'clf__max_depth': 5, 'clf__n_estimators': 100}
+Best training accuracy: 0.847
+Test set f1 score for best params: 0.732 
+
+
+=== Confusion Matrix ===
+[[383  14]
+ [ 35  67]]
+
+
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.92      0.96      0.94       397
+           1       0.83      0.66      0.73       102
+
+    accuracy                           0.90       499
+   macro avg       0.87      0.81      0.84       499
+weighted avg       0.90      0.90      0.90       499
+
+
+Estimator: SVM
+Best params: {'clf__C': 0.1, 'clf__kernel': 'linear'}
+Best training accuracy: 0.873
+Test set f1 score for best params: 0.747 
+
+
+=== Confusion Matrix ===
+[[358  39]
+ [ 18  84]]
+
+
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.95      0.90      0.93       397
+           1       0.68      0.82      0.75       102
+
+    accuracy                           0.89       499
+   macro avg       0.82      0.86      0.84       499
+weighted avg       0.90      0.89      0.89       499
+
+
+Estimator: XGBoost
+Best params: {'clf__max_depth': 2}
+Best training accuracy: 0.877
+Test set f1 score for best params: 0.706 
+
+
+=== Confusion Matrix ===
+[[369  28]
+ [ 31  71]]
+
+
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.92      0.93      0.93       397
+           1       0.72      0.70      0.71       102
+
+    accuracy                           0.88       499
+   macro avg       0.82      0.81      0.82       499
+weighted avg       0.88      0.88      0.88       499
+
+
+--------------------------------------------------
+Classifier with best test set accuracy SVM
+
+--------------------------------------------------
+=== Confusion Matrix ===
+[[358  39]
+ [ 18  84]]
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.95      0.90      0.93       397
+           1       0.68      0.82      0.75       102
+
+    accuracy                           0.89       499
+   macro avg       0.82      0.86      0.84       499
+weighted avg       0.90      0.89      0.89       499
+
+Probability: 0.3
+=== Confusion Matrix ===
+[[328  69]
+ [ 13  89]]
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.96      0.83      0.89       397
+           1       0.56      0.87      0.68       102
+
+    accuracy                           0.84       499
+   macro avg       0.76      0.85      0.79       499
+weighted avg       0.88      0.84      0.85       499
+
+
+Probability: 0.4
+=== Confusion Matrix ===
+[[352  45]
+ [ 17  85]]
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.95      0.89      0.92       397
+           1       0.65      0.83      0.73       102
+
+    accuracy                           0.88       499
+   macro avg       0.80      0.86      0.83       499
+weighted avg       0.89      0.88      0.88       499
+
+Probability: 0.5
+=== Confusion Matrix ===
+[[364  33]
+ [ 19  83]]
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.95      0.92      0.93       397
+           1       0.72      0.81      0.76       102
+
+    accuracy                           0.90       499
+   macro avg       0.83      0.87      0.85       499
+weighted avg       0.90      0.90      0.90       499
+
+Probability: 0.6
+=== Confusion Matrix ===
+[[376  21]
+ [ 30  72]]
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.93      0.95      0.94       397
+           1       0.77      0.71      0.74       102
+
+    accuracy                           0.90       499
+   macro avg       0.85      0.83      0.84       499
+weighted avg       0.90      0.90      0.90       499
+
+
+Probability: 0.7
+=== Confusion Matrix ===
+[[384  13]
+ [ 37  65]]
+=== Classification Report ===
+              precision    recall  f1-score   support
+
+           0       0.91      0.97      0.94       397
+           1       0.83      0.64      0.72       102
+
+    accuracy                           0.90       499
+   macro avg       0.87      0.80      0.83       499
+weighted avg       0.90      0.90      0.89       499
+
